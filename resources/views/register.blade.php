@@ -24,26 +24,26 @@
 
             <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
                 <p class="text-center text-3xl">Mari bergabung bersama kami.</p>
-                <form class="flex flex-col pt-3 md:pt-8" onsubmit="#">
-                    
+                <form method="POST" class="flex flex-col pt-3 md:pt-8" onsubmit="#" action="/auth/register">
+                    @csrf
                     <div class="flex flex-col pt-4">
                         <label for="nama_lengkap" class="text-lg">Nama Lengkap</label>
-                        <input type="text" id="nama_lengkap" placeholder="Nama Anda" class="form focus:outline-none focus:shadow-outline">
+                        <input type="text" name="fullname" id="nama_lengkap" placeholder="Nama Anda" class="form focus:outline-none focus:shadow-outline">
                     </div>
 
                     <div class="flex flex-col pt-4">
                         <label for="email" class="text-lg">Email</label>
-                        <input type="email" id="email" placeholder="username@email.com" class="form focus:outline-none focus:shadow-outline">
+                        <input type="email" name="user_email" id="email" placeholder="username@email.com" class="form focus:outline-none focus:shadow-outline">
                     </div>
     
                     <div class="flex flex-col pt-4">
                         <label for="password" class="text-lg">Password</label>
-                        <input type="password" id="password" placeholder="Password" class="form focus:outline-none focus:shadow-outline">
+                        <input type="password" name="password" id="password" placeholder="Password" class="form focus:outline-none focus:shadow-outline">
                     </div>
 
                     <div class="flex flex-col pt-4">
                         <label for="confirmation-password" class="text-lg">Konfirmasi Password</label>
-                        <input type="password" id="confirmation-password" placeholder="Konfirmasi Password" class="form focus:outline-none focus:shadow-outline">
+                        <input type="password" name="password_confirm" id="confirmation-password" placeholder="Konfirmasi Password" class="form focus:outline-none focus:shadow-outline">
                     </div>
     
                     <input type="submit" value="Daftarkan" class="bg-blue-600 text-white font-bold text-lg hover:bg-blue-500 p-2 mt-8">
