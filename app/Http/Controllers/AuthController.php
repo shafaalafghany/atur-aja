@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Hash;
+use Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -15,7 +16,7 @@ class AuthController extends Controller
     public function store(Request $request){
         $request->validate([
             'fullname' => 'required|max:255',
-            'user_email' => 'required|unique:users',
+            'user_email' => 'required|email|unique:users',
             'password' => 'required|min:6'
         ]);
         
@@ -46,5 +47,34 @@ class AuthController extends Controller
 
     public function signin() {
         return view('login');
+    }
+
+    public function login(Request $request) {
+        $data = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        $user = User::where('user_email', $request->email)->first();
+        $checkPass = Hash::check($request->password, $user->user_password);
+        if (!$user || !$checkPass) {
+            return back()
+            ->with('message', 'Email atau password salah');
+        }
+        
+        $request->session()->put('email', $user['user_email']);
+        return 'User telah login';
+    }
+
+    public function logout() {
+        $check = session()->has('email');
+        
+        if (!$check) {
+            return redirect('/login')
+            ->with('message', 'Anda belum login, silahkan login terlebih dahulu');
+        }
+
+        session()->pull('email');
+        return redirect('/');
     }
 }
