@@ -15,3 +15,9 @@
 .item-icon {
     @apply flex flex-col rounded-md w-10 h-10 bg-gray-300 justify-center items-center mr-4 p-2
 }
+.item-li {
+    @apply border-gray-400 flex flex-row mb-2 items-center
+}
+.item-ul {
+    @apply flex flex-col p-4 w-full mx-2
+}

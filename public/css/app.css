@@ -31971,6 +31971,24 @@ video {
   padding: 0.5rem
 }
 
+.item-li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  --tw-border-opacity: 1;
+  border-color: rgba(156, 163, 175, var(--tw-border-opacity))
+}
+
+.item-ul {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

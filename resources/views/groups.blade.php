@@ -30,8 +30,8 @@
     <!-- Group Items -->
     <div class="container mx-auto mt-10 w-full items-start justify-center min-h-200">
     
-    <ul class="flex flex-col p-4 w-full">
-        <li class="border-gray-400 flex flex-row mb-2">
+    <ul class="item-ul">
+        <li class="item-li">
             <a href="" class="w-full">
                 <div class="item-box">
                     <div class="item-icon">
@@ -46,8 +46,13 @@
                     <div class="text-gray-600 text-xs">Dibuat pada 6:00 AM</div>
                 </div>
             </a>
+            <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
+            </a>
         </li>
-        <li class="border-gray-400 flex flex-row mb-2">
+        <li class="item-li">
             <a href="" class="w-full">
                 <div class="item-box">
                     <div class="item-icon">
@@ -62,8 +67,13 @@
                     <div class="text-gray-600 text-xs">Dibuat pada 10:00 AM</div>
                 </div>
             </a>
+            <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
+            </a>
         </li>
-        <li class="border-gray-400 flex flex-row mb-2">
+        <li class="item-li">
             <a href="" class="w-full">
                 <div class="item-box">
                     <div class="item-icon">
@@ -77,6 +87,11 @@
                     </div>
                     <div class="text-gray-600 text-xs">Dibuat pada 1:00 PM</div>
                 </div>
+            </a>
+            <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
             </a>
         </li>
     </ul>
