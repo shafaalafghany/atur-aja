@@ -2,14 +2,19 @@
 
 namespace App\Http\Controllers;
 use Hash;
-use Session;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 class AuthController extends Controller
 {
     public function signup() {
+        $check = session()->has('email');
+        
+        if ($check) {
+            return back()
+            ->with('message', 'Anda telah login.');
+        }
+
         return view('register');
     }
 
@@ -46,6 +51,13 @@ class AuthController extends Controller
     }
 
     public function signin() {
+        $check = session()->has('email');
+        
+        if ($check) {
+            return back()
+            ->with('message', 'Anda telah login.');
+        }
+
         return view('login');
     }
 
@@ -63,7 +75,7 @@ class AuthController extends Controller
         }
         
         $request->session()->put('email', $user['user_email']);
-        return 'User telah login';
+        return redirect('/');
     }
 
     public function logout() {
