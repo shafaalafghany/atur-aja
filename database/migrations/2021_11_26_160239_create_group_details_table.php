@@ -15,6 +15,7 @@ class CreateGroupDetailsTable extends Migration
     {
         Schema::create('group_detail', function (Blueprint $table) {
             $table->integer('group_detail_id')->autoIncrement();
+            $table->boolean('group_detail_status');
             $table->integer('user_id');
             $table->integer('group_id');
             $table->foreign('user_id')->references('user_id')->on('users');
