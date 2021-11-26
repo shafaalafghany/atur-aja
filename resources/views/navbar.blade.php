@@ -45,11 +45,17 @@
                     </ul>
                 </div>
                 <div class="flex col-span-2 justify-center md:justify-end mb-2 md:mb-0">
-                    <div class="inline-flex justify-center w-full px-6 py-2 mr-0 text-gray-700 md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto">
+                    <!-- <div class="inline-flex justify-center w-full px-6 py-2 mr-0 text-gray-700 md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto">
                         <a href="/login" class="">Sign In</a>
                     </div>
                     <div class="inline-flex justify-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-blue-600 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-blue-400 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-blue-600">
                         <a href="/register" class="">Sign Up</a>
+                    </div> -->
+                    <div class="inline-flex justify-center font-semibold w-full px-6 py-2 mr-0 text-gray-700 md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto">
+                        M. Lorem
+                    </div>
+                    <div class="inline-flex justify-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-gray-400 border-2 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-gray-500 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-gray-600">
+                        <a href="/register" class="">Log out</a>
                     </div>
                 </div>
             </nav>
