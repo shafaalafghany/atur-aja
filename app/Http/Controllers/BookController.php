@@ -8,7 +8,7 @@ class BookController extends Controller
 {
     public function view_books()
     {
-        $check = session()->has('email');
+        $check = session()->has('id');
         
         if (!$check) {
             return redirect('/login')

@@ -8,7 +8,7 @@ class GroupController extends Controller
 {
     public function view_groups()
     {
-        $check = session()->has('email');
+        $check = session()->has('id');
         
         if (!$check) {
             return redirect('/login')
