@@ -74,8 +74,11 @@ class AuthController extends Controller
             return back()
             ->with('message', 'Email atau password salah');
         }
+
+        $data = explode(" ", $user['user_fullname']);
         
         $request->session()->put('id', $user['user_id']);
+        $request->session()->put('name', $data[0]);
         return redirect('/');
     }
 
