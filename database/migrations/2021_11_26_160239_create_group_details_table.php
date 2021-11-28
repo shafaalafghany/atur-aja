@@ -13,7 +13,7 @@ class CreateGroupDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('group_detail', function (Blueprint $table) {
+        Schema::create('group_details', function (Blueprint $table) {
             $table->integer('group_detail_id')->autoIncrement();
             $table->boolean('group_detail_status');
             $table->integer('user_id');
