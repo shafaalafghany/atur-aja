@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Group;
+use App\Models\GroupDetail;
 use Illuminate\Http\Request;
 
 class GroupController extends Controller
@@ -16,7 +17,11 @@ class GroupController extends Controller
             ->with('message', 'Anda belum login, silahkan login terlebih dahulu.');
         }
 
-        return view('groups');
+        $id_user = session()->get('id');
+
+        $data = Group::select('*')->where('lead_id', '=', $id_user)->get();
+
+        return view('groups', ['data' => $data]);
     }
 
     public function add_group()
@@ -51,8 +56,16 @@ class GroupController extends Controller
         $group->lead_id = session()->get('id');
 
         if ($group->save()) {
-            return redirect('groups')
-            ->with('message', 'Grup berhasil dibuat!');
+
+            $relation = new GroupDetail();
+            $relation->group_detail_status = 1;
+            $relation->user_id = $group->lead_id;
+            $relation->group_id = $group->id;
+
+            if ($relation->save()) {
+                return redirect('groups')
+                ->with('message', 'Grup berhasil dibuat!');
+            }
         }
     }
 }
