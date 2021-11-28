@@ -19,7 +19,8 @@ class AuthController extends Controller
         return view('register');
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $request->validate([
             'fullname' => 'required|max:255',
             'user_email' => 'required|email|unique:users',
