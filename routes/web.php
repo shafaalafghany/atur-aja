@@ -37,3 +37,8 @@ Route::post('/groups/add', [GroupController::class, 'store']);
 //Book
 Route::get('/books', [BookController::class, 'view_books']);
 Route::get('/books/add-book', [BookController::class, 'add_book']);
+
+//Transaction
+Route::get('/transactions', function () {
+    return view('transactions');
+});
