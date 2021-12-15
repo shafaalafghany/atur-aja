@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 use Hash;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use App\Models\User;
 
 class AuthController extends Controller
 {
     public function signup() {
-        $check = session()->has('email');
+        $check = session()->has('id');
         
         if ($check) {
             return back()
@@ -18,7 +19,8 @@ class AuthController extends Controller
         return view('register');
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $request->validate([
             'fullname' => 'required|max:255',
             'user_email' => 'required|email|unique:users',
@@ -51,7 +53,7 @@ class AuthController extends Controller
     }
 
     public function signin() {
-        $check = session()->has('email');
+        $check = session()->has('id');
         
         if ($check) {
             return back()
@@ -62,7 +64,7 @@ class AuthController extends Controller
     }
 
     public function login(Request $request) {
-        $data = $request->validate([
+        $request->validate([
             'email' => 'required|email',
             'password' => 'required',
         ]);
@@ -73,20 +75,23 @@ class AuthController extends Controller
             return back()
             ->with('message', 'Email atau password salah');
         }
+
+        $data = explode(" ", $user['user_fullname']);
         
-        $request->session()->put('email', $user['user_email']);
+        $request->session()->put('id', $user['user_id']);
+        $request->session()->put('name', $data[0]);
         return redirect('/');
     }
 
     public function logout() {
-        $check = session()->has('email');
+        $check = session()->has('id');
         
         if (!$check) {
             return redirect('/login')
             ->with('message', 'Anda belum login, silahkan login terlebih dahulu');
         }
 
-        session()->pull('email');
+        session()->pull('id');
         return redirect('/');
     }
 }

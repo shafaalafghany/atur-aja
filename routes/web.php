@@ -31,6 +31,9 @@ Route::get('/auth/logout', [AuthController::class,  'logout']);
 
 //Group
 Route::get('/groups', [GroupController::class, 'view_groups']);
+Route::get('/groups/add-group', [GroupController::class, 'add_group']);
+Route::post('/groups/add', [GroupController::class, 'store']);
 
 //Book
 Route::get('/books', [BookController::class, 'view_books']);
+Route::get('/books/add-book', [BookController::class, 'add_book']);
