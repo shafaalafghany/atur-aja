@@ -30,77 +30,77 @@
     <!-- Group Items -->
     <div class="container mx-auto mt-10 w-full items-start justify-center min-h-200">
     
-    <ul class="item-ul">
-        <li class="item-li">
-            <a href="" class="w-full">
-                <div class="item-box">
-                    <div class="item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-                        </svg>
+        <ul class="item-ul">
+            <li class="item-li">
+                <a href="" class="w-full">
+                    <div class="item-box">
+                        <div class="item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1 pl-1 mr-16">
+                            <div class="font-medium">Grup 1</div>
+                            <div class="text-gray-600 text-sm">Keterangan 1</div>
+                        </div>
+                        <div class="text-gray-600 text-xs">Dibuat pada 6:00 AM</div>
                     </div>
-                    <div class="flex-1 pl-1 mr-16">
-                        <div class="font-medium">Grup 1</div>
-                        <div class="text-gray-600 text-sm">Keterangan 1</div>
+                </a>
+                <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </li>
+            <li class="item-li">
+                <a href="" class="w-full">
+                    <div class="item-box">
+                        <div class="item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1 pl-1 mr-16">
+                            <div class="font-medium">Grup 2</div>
+                            <div class="text-gray-600 text-sm">Keterangan 2</div>
+                        </div>
+                        <div class="text-gray-600 text-xs">Dibuat pada 10:00 AM</div>
                     </div>
-                    <div class="text-gray-600 text-xs">Dibuat pada 6:00 AM</div>
-                </div>
-            </a>
-            <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </li>
-        <li class="item-li">
-            <a href="" class="w-full">
-                <div class="item-box">
-                    <div class="item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-                        </svg>
+                </a>
+                <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </li>
+            <li class="item-li">
+                <a href="" class="w-full">
+                    <div class="item-box">
+                        <div class="item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1 pl-1 mr-16">
+                            <div class="font-medium">Grup 3</div>
+                            <div class="text-gray-600 text-sm">Keterangan 3</div>
+                        </div>
+                        <div class="text-gray-600 text-xs">Dibuat pada 1:00 PM</div>
                     </div>
-                    <div class="flex-1 pl-1 mr-16">
-                        <div class="font-medium">Grup 2</div>
-                        <div class="text-gray-600 text-sm">Keterangan 2</div>
-                    </div>
-                    <div class="text-gray-600 text-xs">Dibuat pada 10:00 AM</div>
-                </div>
-            </a>
-            <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </li>
-        <li class="item-li">
-            <a href="" class="w-full">
-                <div class="item-box">
-                    <div class="item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-                        </svg>
-                    </div>
-                    <div class="flex-1 pl-1 mr-16">
-                        <div class="font-medium">Grup 3</div>
-                        <div class="text-gray-600 text-sm">Keterangan 3</div>
-                    </div>
-                    <div class="text-gray-600 text-xs">Dibuat pada 1:00 PM</div>
-                </div>
-            </a>
-            <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </li>
-    </ul>
+                </a>
+                <a href="" class="bg-red-400 rounded-full ml-4 font-bold text-white px-4 py-4 transition duration-300 ease-in-out hover:bg-red-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
     
-    <div class="flex flex-col p-4 w-full">
-        <a href="" class="inline mx-auto justify-center items-center bg-blue-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600">
-            Tambah
-        </a>
-    </div>
+        <div class="flex flex-col p-4 w-full">
+            <a href="" class="inline mx-auto justify-center items-center bg-blue-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600">
+                Tambah
+            </a>
+        </div>
     
     </div>
 

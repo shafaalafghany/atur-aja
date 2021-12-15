@@ -112,14 +112,58 @@
 
         </div>
 
-        <div class="col-span-1 justify-center mx-6">
-            <h1 class="text-xl mt-12 mb-8 md:mt-16 md:mb-6 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-2xl lg:text-3xl"><span class="inline-block lg:inline">Daftar Anggota</span></h1>
-            <div class="bg-white rounded-2xl w-full min-h-200 mb-8 drop-shadow-md">
-
+        <div class="col-span-3 lg:col-span-1 justify-center mx-6">
+            <h1 class="text-xl mt-12 mb-8 md:mt-12 md:mb-6 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-2xl lg:text-3xl"><span class="inline-block lg:inline">Daftar Anggota</span></h1>
+            <div class="bg-white rounded-2xl max-w-lg lg:w-full mx-auto lg:min-h-200 mb-8 drop-shadow-md">
+            
+            <div class="py-4 px-3 flex justify-center">
+                <table class="text-md md:text-sm bg-white rounded-lg mb-4 w-5/6">
+                    <tbody>
+                        <tr class="border-b">
+                            <th class="text-left py-3 px-3">Nama</th>
+                            <th class="text-left py-3 px-3                                                                                                                                                                                  ">Jabatan</th>
+                            <th></th>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="text-left py-3 px-3">M. Lorem Ipsum</td>
+                            <td class="text-left py-3 px-3">
+                                <select name="jabatan" value="user.role" class="bg-transparent">
+                                    <option value="user">User</option>
+                                    <option value="admin">Admin</option>
+                                </select>
+                            </td>
+                            <td class="py-3 px-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M11 6a3 3 0 11-6 0 3 3 0 016 0zM14 17a6 6 0 00-12 0h12zM13 8a1 1 0 100 2h4a1 1 0 100-2h-4z" />
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="text-left py-3 px-3">M. Lorem Ipsum</td>
+                            <td class="text-left py-3 px-3">
+                                <select name="jabatan" value="user.role" class="bg-transparent">
+                                    <option value="user">User</option>
+                                    <option value="admin">Admin</option>
+                                </select>
+                            </td>
+                            <td class="py-3 px-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M11 6a3 3 0 11-6 0 3 3 0 016 0zM14 17a6 6 0 00-12 0h12zM13 8a1 1 0 100 2h4a1 1 0 100-2h-4z" />
+                                </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-            </svg> -->
+            
+            <a href="" class="bg-blue-500 rounded-full inline-flex font-bold text-white px-2 py-2 transition duration-300 ease-in-out hover:bg-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 justify-center cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
+            </a>
+
+        </div>
+
         </div>
 
     </div>

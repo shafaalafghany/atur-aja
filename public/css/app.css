@@ -31981,8 +31981,8 @@ video {
 }
 
 .item-ul {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   width: 100%;
   flex-direction: column;
