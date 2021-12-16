@@ -11,7 +11,15 @@
 
     @include('navbar')
 
-    <div class="grid lg:grid-cols-4">   
+    <div class="relative">
+        <a href="/groups">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-grey-600 h-10 w-10 ml-8 mt-8 md:absolute" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>    
+        </a>
+    </div>
+
+    <div class="grid lg:grid-cols-4 pt-12">   
 
         <div class="col-span-3">
             
@@ -132,47 +140,49 @@
             <div class="bg-white rounded-2xl max-w-lg lg:w-full mx-auto lg:min-h-200 mb-8 drop-shadow-md">
             
             <div class="py-4 px-3 flex justify-center">
-                <table class="text-md md:text-sm bg-white rounded-lg mb-1 w-5/6">
-                    <tbody>
-                        <tr class="border-b">
-                            <th class="text-left py-3 px-3">Nama</th>
-                            <th class="text-left py-3 px-3                                                                                                                                                                                  ">Jabatan</th>
-                            <th></th>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="text-left py-3 px-3">M. Lorem Ipsum</td>
-                            <td class="text-left py-3 px-3">
-                                <select name="jabatan" value="user.role" class="bg-transparent">
-                                    <option value="user">User</option>
-                                    <option value="admin">Admin</option>
-                                </select>
-                            </td>
-                            <td class="py-3 px-3">
-                                <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400 hover:text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M11 6a3 3 0 11-6 0 3 3 0 016 0zM14 17a6 6 0 00-12 0h12zM13 8a1 1 0 100 2h4a1 1 0 100-2h-4z" />
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="text-left py-3 px-3">M. Lorem Ipsum</td>
-                            <td class="text-left py-3 px-3">
-                                <select name="jabatan" value="user.role" class="bg-transparent">
-                                    <option value="user">User</option>
-                                    <option value="admin">Admin</option>
-                                </select>
-                            </td>
-                            <td class="py-3 px-3">
-                                <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400 hover:text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M11 6a3 3 0 11-6 0 3 3 0 016 0zM14 17a6 6 0 00-12 0h12zM13 8a1 1 0 100 2h4a1 1 0 100-2h-4z" />
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="w-full px-7 mt-7 mb-5 max-h-100 overflow-y-auto">
+                    <table class="text-md md:text-sm bg-white rounded-lg mb-1 w-full overflow-y-scroll">
+                        <tbody>
+                            <tr class="border-b">
+                                <th class="text-left py-3 px-3">Nama</th>
+                                <th class="text-left py-3 px-3                                                                                                                                                                                  ">Jabatan</th>
+                                <th></th>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="text-left py-3 px-3">M. Lorem Ipsum</td>
+                                <td class="text-left py-3 px-3">
+                                    <select name="jabatan" value="user.role" class="bg-transparent">
+                                        <option value="user">User</option>
+                                        <option value="admin">Admin</option>
+                                    </select>
+                                </td>
+                                <td class="py-3 px-3">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400 hover:text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M11 6a3 3 0 11-6 0 3 3 0 016 0zM14 17a6 6 0 00-12 0h12zM13 8a1 1 0 100 2h4a1 1 0 100-2h-4z" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="text-left py-3 px-3">M. Lorem Ipsum</td>
+                                <td class="text-left py-3 px-3">
+                                    <select name="jabatan" value="user.role" class="bg-transparent">
+                                        <option value="user">User</option>
+                                        <option value="admin">Admin</option>
+                                    </select>
+                                </td>
+                                <td class="py-3 px-3">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400 hover:text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M11 6a3 3 0 11-6 0 3 3 0 016 0zM14 17a6 6 0 00-12 0h12zM13 8a1 1 0 100 2h4a1 1 0 100-2h-4z" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <div class="inline-flex w-full mb-5">

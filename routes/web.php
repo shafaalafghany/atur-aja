@@ -32,6 +32,9 @@ Route::get('/auth/logout', [AuthController::class,  'logout']);
 //Group
 Route::get('/groups', [GroupController::class, 'view_groups']);
 Route::get('/groups/add-group', [GroupController::class, 'add_group']);
+Route::get('/groups/edit-group', function () {
+    return view('edit_group');
+});
 Route::post('/groups/add', [GroupController::class, 'store']);
 
 //Book

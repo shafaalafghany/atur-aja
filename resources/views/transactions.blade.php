@@ -11,9 +11,23 @@
 
     @include('navbar')
 
-    <h1 class="text-3xl mt-12 mb-8 md:mt-20 md:mb-16 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-4xl lg:text-5xl"><span class="inline-block lg:inline">Daftar</span> <span class="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-500 lg:inline">Transaksi</span></h1>
+    <!-- Add Group Button -->
+    <div class="container flex mx-auto my-auto w-full h-200 items-center justify-center hidden">
+        <a href="" class="cursor-pointer">
+            <div id="empty-cover-art" class="container container items-center justify-center rounded sm:w-full md:w-48 md:h-48 py-16 text-center opacity-50 md:border-dashed md:border-2 md:border-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
+                </svg>
+                <div class="flex-col container">
+                    Buat Tabel
+                </div>
+            </div>
+        </a>
+    </div>
 
-    <div class="min-h-screen">
+    <div class="min-h-200">
+
+        <h1 class="text-3xl mt-12 mb-8 md:mt-20 md:mb-16 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-4xl lg:text-5xl"><span class="inline-block lg:inline">Daftar</span> <span class="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-500 lg:inline">Transaksi</span></h1>
 
         <section class="container mx-auto p-6 font-mono mb-20">
             <div class="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
@@ -300,52 +314,44 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="inline-flex w-full my-4">
-                        <a href="" class="bg-blue-400 rounded-full mx-auto font-bold text-white px-3 py-3 transition duration-300 ease-in-out hover:bg-blue-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
+                </div>
+                <div class="inline-flex w-full my-4">
+                    <a href="" class="bg-blue-400 rounded-full mx-auto font-bold text-white px-3 py-3 transition duration-300 ease-in-out hover:bg-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
 
-
-        <!-- <table class="border-collapse w-full mx-10 ">
-            <thead>
-                <tr>
-                    <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Company name</th>
-                    <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Country</th>
-                    <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Status</th>
-                    <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="bg-white lg:hover:bg-gray-100 table-row flex-no-wrap mb-10 lg:mb-0">
-                    <td class="w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                        <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">Company name</span>
-                        KnobHome
-                    </td>
-                    <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
-                        <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">Country</span>
-                        German
-                    </td>
-                    <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
-                        <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">Status</span>
-                        <span class="rounded bg-red-400 py-1 px-3 text-xs font-bold">deleted</span>
-                    </td>
-                    <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
-                        <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">Actions</span>
-                        <a href="#" class="text-blue-400 hover:text-blue-600 underline">Edit</a>
-                        <a href="#" class="text-blue-400 hover:text-blue-600 underline pl-6">Remove</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table> -->
     </div>
 
     @include('footer')
+
+    <div class="flex items-center justify-center fixed left-0 bottom-0 w-full h-full bg-gray-800 opacity-75 hidden">
+        <div class="bg-white rounded-lg w-1/2">
+            <div class="flex flex-col items-start p-4">
+                <div class="flex items-center w-full">
+                    <div class="text-gray-900 font-medium text-lg mb-2">My modal title</div>
+                    <svg class="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/>
+                    </svg>
+                </div>
+                <hr>
+                    <div class="mb-5">Apakah anda yakin, untuk menghapus grup ini?</div>
+                <hr>
+                <div class="ml-auto">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                        Iya
+                    </button>
+                    <button class="bg-transparent hover:bg-gray-500 text-blue-600 font-semibold hover:text-white py-2 px-4 border border-blue-600 hover:border-transparent rounded">
+                        Tidak
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="{{ asset('js/app.js') }}"></script>
 
