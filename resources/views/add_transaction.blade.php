@@ -20,21 +20,22 @@
 
 <div class="min-h-200 pt-12 pb-40">
 
-    <h1 class="text-3xl mt-12 mb-8 md:mt-20 md:mb-16 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-4xl lg:text-5xl"><span class="inline-block lg:inline">Edit</span> <span class="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-500 lg:inline">Grup</span></h1>
+    <h1 class="text-3xl mt-12 mb-8 md:mt-20 md:mb-16 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-4xl lg:text-5xl"><span class="inline-block lg:inline">Tambah</span> <span class="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-500 lg:inline">Transaksi</span></h1>
 
     <div class="leading-loose">
-        <form action="/groups/add" method="POST" class="max-w-xl m-4 p-10 bg-white rounded shadow-xl mx-auto">
-            <p class="text-gray-800 text-md font-semibold">Informasi Grup</p>
+        <form action="/transactions/add" method="POST" class="max-w-xl m-4 p-10 bg-white rounded shadow-xl mx-auto">
+            <p class="text-gray-800 text-md font-semibold">Detail Transaksi</p>
             @csrf
+            <!-- for each setiap attribut untuk dijadikan form di sini -->
             <dev>
-                <label for="group_name" class="mt-4 block text-sm text-gray-600">Nama Grup: </label>
+                <label for="group_name" class="mt-4 block text-sm text-gray-600">Kolom 1: </label>
                 <input type="text" name="name" class="w-full h-8 px-2 py-2 text-gray-700 bg-gray-200 rounded">
             </dev>
             <dev>
-                <label for="group_desc" class="mt-4 block text-sm text-gray-600">Deskripsi Grup: </label>
+                <label for="group_desc" class="mt-4 block text-sm text-gray-600">Kolom 2: </label>
                 <input type="text" name="desc" class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded">
             </dev>
-            <input type="submit" value="Simpan Grup" class="block mt-10 mx-auto items-center bg-blue-400 rounded-full font-bold text-white px-3 py-2 transition duration-300 ease-in-out hover:bg-blue-500">
+            <input type="submit" value="Tambahkan Transaksi" class="block mt-10 mx-auto items-center bg-blue-400 rounded-full font-bold text-white px-3 py-2 transition duration-300 ease-in-out hover:bg-blue-500">
         </form>
     </div>
 

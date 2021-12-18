@@ -39,9 +39,26 @@ Route::post('/groups/add', [GroupController::class, 'store']);
 
 //Book
 Route::get('/books', [BookController::class, 'view_books']);
-Route::get('/books/add-book', [BookController::class, 'add_book']);
+// Route::get('/books/add-book', [BookController::class, 'add_book']);
+Route::get('/books/add-book', function() {
+    return view('add_book');
+});
+Route::get('/books/edit-book', function() {
+    return view('edit_book');
+});
 
 //Transaction
 Route::get('/transactions', function () {
     return view('transactions');
+});
+Route::get('/transactions/add-transaction', function () {
+    return view('add_transaction');
+});
+Route::get('/transactions/edit-transaction', function () {
+    return view('edit_transaction');
+});
+
+//Attribute
+Route::get('/transactions/edit-attribute', function () {
+    return view('edit_attribute');
 });
