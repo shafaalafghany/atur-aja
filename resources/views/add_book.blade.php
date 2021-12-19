@@ -23,7 +23,7 @@
     <h1 class="text-3xl mt-12 mb-8 md:mt-20 md:mb-16 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-4xl lg:text-5xl"><span class="inline-block lg:inline">Tambah</span> <span class="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-500 lg:inline">Buku Kas</span></h1>
 
     <div class="leading-loose">
-        <form action="/books/add" method="POST" class="max-w-xl m-4 p-10 bg-white rounded shadow-xl mx-auto">
+        <form action="/books/add-book/{{ $data }}" method="POST" class="max-w-xl m-4 p-10 bg-white rounded shadow-xl mx-auto">
             <p class="text-gray-800 text-md font-semibold">Informasi Buku Kas</p>
             @csrf
             <dev>

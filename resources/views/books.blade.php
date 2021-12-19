@@ -126,7 +126,7 @@
                 </ul>
 
                 <div class="flex flex-col p-4 w-full">
-                    <a href="" class="inline mx-auto justify-center items-center bg-blue-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600">
+                    <a href="/books/{{ $data }}/add-book" class="inline mx-auto justify-center items-center bg-blue-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600">
                         Tambah
                     </a>
                 </div>

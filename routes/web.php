@@ -39,14 +39,12 @@ Route::post('groups/edit/{id}', [GroupController::class, 'edit']);
 Route::get('groups/delete/{id}', [GroupController::class, 'delete']);
 
 //Book
-Route::get('/books', [BookController::class, 'view_books']);
-// Route::get('/books/add-book', [BookController::class, 'add_book']);
-Route::get('/books/add-book', function() {
-    return view('add_book');
-});
+Route::get('/books/{id_group}', [BookController::class, 'view_books']);
+Route::get('/books/{id_group}/add-book', [BookController::class, 'view_add_book']);
 Route::get('/books/edit-book', function() {
     return view('edit_book');
 });
+Route::post('/books/add-book/{id_group}', [BookController::class, 'store']);
 
 //Transaction
 Route::get('/transactions', function () {
