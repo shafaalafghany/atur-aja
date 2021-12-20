@@ -27,14 +27,21 @@
             <p class="text-gray-800 text-md font-semibold">Detail Transaksi</p>
             @csrf
             <!-- for each setiap attribut untuk dijadikan form di sini -->
-            <dev>
-                <label for="group_name" class="mt-4 block text-sm text-gray-600">Kolom 1: </label>
-                <input type="text" name="name" class="w-full h-8 px-2 py-2 text-gray-700 bg-gray-200 rounded">
-            </dev>
-            <dev>
+            <div>
+                <label for="group_name" class="label-form">Kolom 1: </label>
+                <div class="inline-flex w-full">
+                    <input type="text" name="name" class="input-form">
+                    <div id="remove_input" value="0" class="button-remove-form">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div>
                 <label for="group_desc" class="mt-4 block text-sm text-gray-600">Kolom 2: </label>
                 <input type="text" name="desc" class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded">
-            </dev>
+            </div>
             <input type="submit" value="Simpan Transaksi" class="block mt-10 mx-auto items-center bg-blue-400 rounded-full font-bold text-white px-3 py-2 transition duration-300 ease-in-out hover:bg-blue-500">
         </form>
     </div>

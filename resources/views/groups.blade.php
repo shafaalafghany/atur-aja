@@ -10,20 +10,6 @@
 <body class="bg-gray-100 font-body">
 
     @include('navbar')
-
-    <!-- Add Group Button -->
-    <div class="container flex mx-auto my-auto w-full h-200 items-center justify-center hidden">
-        <a href="" class="cursor-pointer">
-            <div id="empty-cover-art" class="container container items-center justify-center rounded sm:w-full md:w-48 md:h-48 py-16 text-center opacity-50 md:border-dashed md:border-2 md:border-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
-                </svg>
-                <div class="flex-col container">
-                    Tambah Grup
-                </div>
-            </div>
-        </a>
-    </div>
     
     <div class="relative">
         <a href="/">
@@ -33,11 +19,29 @@
         </a>
     </div>
 
-    <!-- Group Items -->
     <div class="container mx-auto pt-12 w-full items-start justify-center min-h-200">
 
         <h1 class="text-3xl mt-12 mb-8 md:mt-20 md:mb-16 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-4xl lg:text-5xl"><span class="inline-block lg:inline">Daftar</span> <span class="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-500 lg:inline">Grup</span></h1>
-    
+
+    @if(count($data)==0)
+
+    <!-- Add Group Button -->
+        <div class="container flex mx-auto my-auto w-full h-200 items-center justify-center">
+            <a href="/groups/add-group" class="cursor-pointer">
+                <div id="empty-cover-art" class="container container items-center justify-center rounded sm:w-full md:w-48 md:h-48 py-16 text-center opacity-50 md:border-dashed md:border-2 md:border-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
+                    </svg>
+                    <div class="flex-col container">
+                        Tambah Grup
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    @else
+
+    <!-- Group Items -->    
         <ul class="item-ul">
         @foreach ($data as $item)
             <li class="item-li">
@@ -67,14 +71,16 @@
                 </a>
             </li>
         @endforeach
-    </ul>
-    
+        </ul>
+
         <div class="flex flex-col p-4 w-full">
             <a href="/groups/add-group" class="inline mx-auto justify-center items-center bg-blue-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600">
                 Tambah
             </a>
         </div>
-    
+        
+        @endif
+        
     </div>
 
 

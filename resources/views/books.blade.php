@@ -12,7 +12,7 @@
     @include('navbar')
 
     <div class="relative">
-        <a href="/books/">
+        <a href="/groups">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-grey-600 h-10 w-10 ml-8 mt-8 md:absolute" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
             </svg>    
@@ -25,9 +25,11 @@
             
             <h1 class="text-3xl mt-12 mb-8 md:mt-20 md:mb-16 font-extrabold leading-10 tracking-tight text-gray-900 text-center sm:leading-none md:text-4xl lg:text-5xl"><span class="inline-block lg:inline">Daftar</span> <span class="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-500 lg:inline">Buku Kas</span></h1>
 
+            @if (count($data) == 0 )
+
             <!-- Add Group Button -->
-            <div class="container flex mx-auto my-auto w-full h-200 items-center justify-center hidden">
-                <a href="" class="cursor-pointer">
+            <div class="container flex mx-auto my-auto w-full h-200 items-center justify-center">
+                <a href="/book/add-books" class="cursor-pointer">
                     <div id="empty-cover-art" class="flex-col container items-center justify-center rounded sm:w-full md:w-48 md:h-48 py-16 text-center opacity-50 md:border-dashed md:border-2 md:border-gray-400">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
@@ -38,6 +40,8 @@
                     </div>
                 </a>
             </div>
+
+            @else
             
             <!-- Group Items -->
             <div class="container mx-auto mt-10 w-full items-start justify-center min-h-200">
@@ -80,6 +84,8 @@
                 </div>
             
             </div>
+
+            @endif
 
         </div>
 

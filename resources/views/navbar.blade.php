@@ -65,8 +65,7 @@
         </div>
 
     </div> <!-- content wrapper end -->
-
-    <script src="{{ asset('js/app.js') }}"></script>
+    
 </body>
 
 </html>

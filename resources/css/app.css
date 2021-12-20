@@ -15,9 +15,23 @@
 .item-icon {
     @apply flex flex-col rounded-md w-10 h-10 bg-gray-300 justify-center items-center mr-4 p-2
 }
+
 .item-li {
     @apply border-gray-400 flex flex-row mb-2 items-center
 }
+
 .item-ul {
     @apply flex flex-col p-4 w-full mx-auto
+}
+
+.label-form {
+    @apply mt-4 block text-sm text-gray-600
+}
+
+.input-form {
+    @apply w-full h-8 px-2 py-2 text-gray-700 bg-gray-200 rounded
+}
+
+.button-remove-form {
+    @apply ml-5 bg-red-400 rounded-full my-auto mx-auto font-bold text-white px-1 py-1 transition duration-300 ease-in-out hover:bg-red-500
 }

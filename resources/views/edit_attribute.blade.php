@@ -27,21 +27,17 @@
             <p class="text-gray-800 text-md font-semibold">List Kolom Data</p>
             @csrf
             <!-- for each setiap attribut untuk dijadikan form di sini -->
-            <dev>
-                <label for="group_name" class="mt-4 block text-sm text-gray-600">Kolom 1: </label>
-                <input type="text" name="name" class="w-full h-8 px-2 py-2 text-gray-700 bg-gray-200 rounded">
-            </dev>
-            <dev>
-                <label for="group_desc" class="mt-4 block text-sm text-gray-600">Kolom 2: </label>
-                <input type="text" name="desc" class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded">
-            </dev>
-            <dev class="flex mt-4">
-                <a href="" class="inline-flex bg-blue-400 rounded-full mx-auto font-bold text-white px-2 py-2 transition duration-300 ease-in-out hover:bg-blue-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z" />
-                </svg>
-                </a>
-            </dev>
+            <input type="hidden" id="counter" value="0">
+            <div id="list_input_form">
+                Silahkan tekan tombol dibawah untuk menambahkan kolom
+            </div>
+            <div class="flex mt-4">
+                <div id="add_input" class="inline-flex bg-blue-400 rounded-full mx-auto font-bold text-white px-2 py-2 transition duration-300 ease-in-out hover:bg-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z" />
+                    </svg>
+                </div>
+            </div>
             <input type="submit" value="Simpan Kolom Data" class="block mt-8 mx-auto items-center bg-blue-400 rounded-full font-bold text-white px-3 py-2 transition duration-300 ease-in-out hover:bg-blue-500">
         </form>
     </div>
