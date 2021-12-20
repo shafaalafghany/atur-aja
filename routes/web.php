@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\GroupController;
 use App\Http\Controllers\BookController;
+use App\Models\Book;
 use App\Models\Group;
 use Illuminate\Support\Facades\Route;
 
@@ -41,10 +42,10 @@ Route::get('groups/delete/{id}', [GroupController::class, 'delete']);
 //Book
 Route::get('/books/{id_group}', [BookController::class, 'view_books']);
 Route::get('/books/{id_group}/add-book', [BookController::class, 'view_add_book']);
-Route::get('/books/edit-book', function() {
-    return view('edit_book');
-});
-Route::post('/books/add-book/{id_group}', [BookController::class, 'store']);
+Route::get('/books/{id_group}/edit-book/{id_book}',[BookController::class, 'view_edit_book']);
+Route::post('/books/add/{id_group}', [BookController::class, 'store']);
+Route::post('/books/{id_group}/edit/{id_book}', [BookController::class, 'edit']);
+Route::get('/books/{id_group}/delete/{id_book}', [BookController::class, 'delete']);
 
 //Transaction
 Route::get('/transactions', function () {
